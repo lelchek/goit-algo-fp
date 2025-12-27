@@ -1,10 +1,10 @@
-from typing import Generic, TypeVar, Optional
+from typing import Optional
 
 
 class Node:
     def __init__(self, data: int):
         self.data: int = data
-        self.next: Optional[Node] = None
+        self.next: Optional["Node"] = None
 
 
 class LinkedList:
